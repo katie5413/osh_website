@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="何萬順教授個人網頁">
+    <meta name="author" content="何萬順">
+
+    <title>何萬順教授個人網頁</title>
+
+    <!-- Custom fonts for this theme -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+    <body id="page-top">
+        <!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+    <div class="container">
+        <div>
+            <a class="navbar-brand js-scroll-trigger" href="index.html">何萬順教授</a>
+            <a class="navbar-subBrand" href="index.html">Professor One-Soon Her</a>
+        </div>
+
+        <button
+                class="navbar-toggler navbar-toggler-left text-uppercase font-weight-bold bg-primary text-black rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Menu pic -->
+            <img class="menuPic" src="img/menu.png" width="25" height="25" alt="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!-- Home page -->
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">首頁
+                            <span class="nav-barEn">Home</span>
+                    </a>
+                </li>
+                <!-- Experience -->
+                <li>
+                    <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="experience.html">個人經歷
+                            <span class="nav-barEn">Experience</span>
+                    </a>
+                </li>
+                <!-- Research -->
+                <li>
+                    <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="research.html">學術研究
+                            <span class="nav-barEn">Research</span>
+                    </a>
+                </li>
+
+                <!-- Publications -->
+                <li>
+                    <a class="btn btn-secondary py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="publications.html">出版著作
+                            <span class="nav-barEn">Publications</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Search -->
+        <header class="masthead bg-primary text-secondary text-center">
+            <div class="container d-flex align-items-center flex-column  text-center" id="main">
+                <!-- Search Icon  -->
+                <div>
+
+                    <!-- Search Title  -->
+                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Search</h2>
+                </div>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="jumbotron  jumbotron-fluid row text-center align-items-center ">
+                    <div class="col-md-4 col-lg-2">
+                        <h5>字元搜尋</h5>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="box">
+                            <div class="container-1 ">
+                                <span class="icon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="search" onkeyup="tableSort()" id="search" placeholder="Search..."/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="jumbotron jumbotron-fluid row text-center align-items-center  publication-icon " >
+                    <div class="col-lg-2 col-md-4">
+                        <h5>類別搜尋</h5>
+                    </div>
+                    <div class="col-lg-10  col-md-10 align-items-center text-center  align-middle d-lg-inline-flex d-md-inline-flex d-inline-flex">
+
+                        <div class="publication-container " id="A">
+                            <a href="#current"  name="Refereed Journal Articles" onclick=" A() ">
+                                <img src="img/article.png"   alt="" class="publication-image">
+                                <div class="publication-overlay">期刊論文</div>
+                            </a>
+                        </div>
+                        <div class="publication-container " id="B">
+                            <a href="#current" name="Bibliographies" onclick=" B() ">
+                                <img src="img/bibliographies.png"  alt="" class="publication-image">
+                                <div class="publication-overlay">書目</div>
+                            </a>
+                        </div>
+                        <div class="publication-container " id="C">
+                            <a href="#current" name="Book Chapters" onclick=" C() ">
+                                <img src="img/bookChapter.png"  alt="" class="publication-image">
+                                <div class="publication-overlay">專書篇章</div>
+                            </a>
+                        </div>
+                        <div class="publication-container " id="D">
+                            <a href="#current" name="Books and Monographs" onclick=" D() ">
+                                <img src="img/booksAndMonographs.png"  alt="" class="publication-image">
+                                <div class="publication-overlay">專書</div>
+                            </a>
+                        </div>
+                        <div class="publication-container " id="E">
+                            <a href="#current" name="Conference Papers" onclick=" E() ">
+                                <img src="img/conferencePaper.png"  alt="" class="publication-image" >
+                                <div class="publication-overlay">會議論文</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="jumbotron  jumbotron-fluid row text-center align-items-center ">
+                    <div class="col-md-4 col-lg-2">
+                        <h5>其他連結</h5>
+                    </div>
+                    <div class="col-md-10 text-left">
+                        <div class="box">
+                            <div class="container-1">
+                                <a target="_blank" class="card-title" href="https://opinion.cw.com.tw/blog/profile/351">獨立評論</a>
+                                ｜
+                                <a target="_blank" class="card-title" href="http://www3.nccu.edu.tw/~osh/e.html">舊)出版著作</a>
+                                ｜
+                                <a target="_blank" class="card-title" href="http://www3.nccu.edu.tw/~osh/f.html">舊)會議論文</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- Formal Publications -->
+            <section class="pub-masthead about text-center text-secondary" id="current">
+                <div class="container d-flex align-items-center flex-column ">
+
+                    <!-- Formal Publications Icon  -->
+                    <div>
+                        <!-- Formal Publications Title  -->
+                        <h2 class="text-center text-uppercase text-secondary mb-0">Formal Publications</h2>
+                    </div>
+
+                    <!-- Icon Divider -->
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+
+                </div>
+                <!-- Table-->
+                <table id="myTable">
+                    <tr class="header">
+                        <th scope="col" class="pub-title">#</th>
+                        <th scope="col" class="pub-pub"></th>
+                        <th scope="col" class="pub-catagory">Catagory</th>
+                        <th scope="col" class="pub-other"></th>
+                        <th scope="col" class="pub-download"></th>
+
+                    </tr>
+                    <!-- Refereed Journal Articles -->
+<!--新增 Refereed Journal Articles
+1.複製以下這段<tr> </tr>包住的內容
+2.更改((括號包住的內容))，括號要記得刪掉
+3.檔名請正確命名 A00-檔名，並放在publication裡面
+4.其他都不用改！儲存後，將新的程式碼上傳至ftp
+<tr>
+    <td class="pub-title">((填入編號 A00 ))</td> 
+    <td class="pub-pub">((填入著作名稱))<a href="((填入網站連結，無則空白即可))"  target="_blank" class="pub_a">((填入網站名稱，無則空白即可))</a> </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">((填入期刊種類EX:TSSCI，無則空白即可))</td>
+    <td class="pub-download">
+        <a href="publication/((填入A00-檔名))" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+-->
+<tr>
+    <td class="pub-title">A61</td>
+    <td class="pub-pub">Tang, Marc, Ying-Chun Chen, Nai-Shing Yen, One-Soon Her*. To appear. Investigating the branching of Chinese classifier phrases: Evidence from speech perception and production. To appear in <a href="http://www.cuhk.edu.hk/journal/jcl/" target="_blank" class="pub_a">Journal of Chinese Linguistics</a>.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A61-T3 paper-JCL-Post-Print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A60</td>
+    <td class="pub-pub">Tang, Marc* and One-Soon Her. To appear. Numeral base, numeral classifier, and noun: Word order harmonization. To appear in <a href="http://www.ling.sinica.edu.tw/LL/en/about" target="_blank" class="pub_a">Language and Linguistics</a> 22.2 (April 2021).</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A60-Word Order of Numeral Classifiers and Numeral Bases.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+
+</tr>
+<tr>
+    <td class="pub-title">A59</td>
+    <td class="pub-pub">陳孟英、謝妙玲*、何萬順. To appear.〈台灣閩南語分類詞之檢驗〉(Distinguishing classifiers in Taiwan Southern Min)。《語言暨語言學》(<a href="http://www.ling.sinica.edu.tw/LL/en/about" target="_blank" class="pub_a">Language and Linguistics</a>) 21.3 (July 2020).</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A59-TSM-classifiers-Post-Print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A58</td>
+    <td class="pub-pub">Tang, Marc* and One-Soon Her. To appear. Insights on the Greenberg-Sanches-Slobin Generalization: Quantitative typological data on classifiers and plural markers. <a href="https://www.degruyter.com/view/j/flin" target="_blank" class="pub_a">Folia Linguistica.</a>
+    </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A58-GSSG-Tang & Her-Post-Print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A57</td>
+    <td class="pub-pub">Her, One-Soon* and Hui-Chin Tsai. To appear. Left is right, right is not: On the constituency of the classifier phrase in Chinese. <a href="http://www.ling.sinica.edu.tw/LL/en/about" target="_blank" class="pub_a">Language and Linguistics</a> 20.4 (October 2019).</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A57-Left is Right-L&L-Post-Print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A56</td>
+    <td class="pub-pub">林俊儒*、林昆翰、何萬順. 2019.〈論「通過/不通過制」在大學教育中的誤用與重塑〉(On the misuse and reestablishment of the pass-fail grading system in university education).《<a href="http://bulletin.ed.ntnu.edu.tw/bookindex/?mode=detail&id=2269#main" target="_blank" class="pub_a">教育研究集刊</a>》(Bulletin of Educational Research) 65.3.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">TSSCI</td>
+    <td class="pub-download">
+        <a href="publication/A56-Post-Print-PF-system.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A55</td>
+    <td class="pub-pub">Her, One-Soon, Macr Tang*, and Bing-Tsiong Li. 2019. Word order of numeral classifiers and numeral bases: Harmonization by multiplication. <a href="https://www.degruyter.com/view/j/stuf" target="_blank" class="pub_a">STUF-Language Typology and Universals</a> 3: 1-32. </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">ESCI</td>
+    <td class="pub-download">
+        <a href="publication/A55-SMATTI_Revised2.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A54</td>
+    <td class="pub-pub">何萬順、林俊儒*. 2018.〈大學自治還是教育外包？－簡評台北高等行政法院106年度訴字第169號政大英語畢業門檻之判決〉(University autonomy or education outsourcing? Remarks on Taipei High Administrative Court’s 2017 Ruling 169 on NCCU’s English exit examination).《<a href="https://www.lawbank.com.tw/treatise/pl_introduction.aspx?PID=PL000006" target="_blank" class="pub_a">全國律師</a>》(Taiwan Bar Journal) 12:105-114.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A54-169_Published Version.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A53</td>
+    <td class="pub-pub">李孟章、楊雯淇、何萬順*. 2018.〈數詞與量詞系統在民族接觸下的變化：以藏緬語Sunwar和Rabha為例〉。(On the variation of numeral systems and classifier systems under ethnic contact: A case study of Sunwar and Rabha in Tibeto-Burman).《<a href="http://readopac1.ncl.edu.tw/nclserialFront/search/guide/detail.jsp?sysId=0006727220&dtdId=000075&search_type=detail&mark=basic&la=ch&checked=&unchecked=0010006492773,0020006727220," target="_blank" class="pub_a">民族學界</a>》(Ethnologia) 42: 39-80. </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A53-Rabha & Sunwa.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A52</td>
+    <td class="pub-pub">Her, One-Soon and Marc Tang*. 2018. A statistical explanation of the distribution of sortal classifiers in languages of the world via computational classifiers. <a href="https://www.tandfonline.com/toc/njql20/current"  target="_blank" class="pub_a">Journal of Quantitative Linguistics</a> DOI: 10.1080/09296174.2018.1523777.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A52-QL-published version.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A51</td>
+    <td class="pub-pub">Chen, Ying-Chun, One-Soon Her, and Nai-Shing Yen*. 2018. Quantity processing of Chinese numeral classifiers: Distance and congruity effects. <a href="https://journals.plos.org/plosone/s/journal-information"  target="_blank" class="pub_a">PLoS ONE</a> 13.11: e0206308. <a href="https://doi.org/10.1371/journal.pone.0206308"  target="_blank" class="pub_a">線上閱讀</a>
+    </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SCI</td>
+    <td class="pub-download">
+        <a href="publication/A51-Stroop-Published Version.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A50</td>
+    <td class="pub-pub">
+        Her, One-Soon* and Hui-Chin Tsai. To appear. Left is right, right is not: On the constituency of the classifier phrase in Chinese. <a href="http://www.ling.sinica.edu.tw/LL/en/about" target="_blank" class="pub_a">Language and Linguistics</a>. </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A50-Left is Right-L&L-Post-Print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A49</td>
+    <td class="pub-pub">何萬順*、林俊儒. 2017.〈大學學業退學制度的批判與反思〉(A critical review of the policies of academic dismissal from university).《<a href="http://bulletin.ed.ntnu.edu.tw/bookindex/?mode=detail&id=2269#main" target="_blank" class="pub_a">教育研究集刊</a>》(Bulletin of Educational Research) 63.3: 75-106.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">TSSCI</td>
+    <td class="pub-download">
+        <a href="publication/A49-大學學業退學制度的批判與反思-Proof.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A48</td>
+    <td class="pub-pub">Her, One-Soon, Ying-Chun Chen, Nai-Shing Yen*. 2017. Semantic attributes and mathematical values in the processing of Chinese numeral classifiers and measure words. <a href="https://journals.plos.org/plosone/s/journal-information"  target="_blank" class="pub_a">PLoS ONE</a> 12(9): e0185047. <a href="https://doi.org/10.1371/journal.pone.0185047 "  target="_blank" class="pub_a">線上閱讀</a>
+    </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SCI</td>
+    <td class="pub-download">
+        <a href="publication/A48-2017 PLOS Her-Chen-Yen.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A47</td>
+    <td class="pub-pub">He, Chuansheng*, One-Soon Her, Victor Xiaoshi Hu, and Weijing Zhu. 2017. Overt coordination in additive numerals of minority languages in South China. Syntax 20.3: 292-316. DOI: 10.1111/synt.12137</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A47-POST-PRINT Overt coordination in additive numerals of minority languages in South China-final.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A46</td>
+    <td class="pub-pub">Her, One-Soon. 2017. Structure of numerals and numeral classifiers in Chinese: Historical and typological perspectives and cross-linguistic implications. <a href="http://www.ling.sinica.edu.tw/LL/en/News"  target="_blank" class="pub_a">Language and Linguistics</a> 18.1:26-71. </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A46-Classifiers-Historical-L&L-POST-PRINT.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A45</td>
+    <td class="pub-pub">Her, One-Soon. 2017. Deriving classifier word order typology, or Greenberg’s Universal 20A, and Universal 20. <a href="http://www.degruyter.com/view/j/ling"  target="_blank" class="pub_a">Linguistics</a> 55.2: 265-303.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A45-HER-Universal 20A-POSTPRINT-LINGUISTICS.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A44</td>
+    <td class="pub-pub">Her, One-Soon, Chen, Ching Perng & Tsai, Hui-Chin. 2015. Justifying Silent Elements in Syntax: The Case of a Silent Numeral, a Silent Classifier, and Two Silent Nouns in Mandarin Chinese. <a href="https://benjamins.com/#catalog/journals/ijchl/main"  target="_blank" class="pub_a">International Journal of Chinese Linguistics</a> 2:2: 193-226.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A44-justifying silent elements in syntax HER ＆TSAI-post-print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A43</td>
+    <td class="pub-pub">何萬順*、林昆翰. 2015. 〈分類詞與量詞的區分：以台灣華語為例〉(Distinguishing classifiers and measure words: A Case study of Taiwan Mandarin). 《<a href="http://ling.ccnu.edu.cn/hyxb/xbjj.htm"  target="_blank" class="pub_a">漢語學報</a>》(Chinese Linguistics) 2015.4:56-68.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">CSSCI</td>
+    <td class="pub-download">
+        <a href="publication/A43-漢語學報 何万顺 林昆翰 PROOF.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A42</td>
+    <td class="pub-pub">Her, One-Soon & Tsai, Hui-Chin. 2015. On silent elements: A case study of grand and its silent entourage. <a href="http://link.springer.com/journal/11049"  target="_blank" class="pub_a">Natural Language and Linguistic Theory</a> 33.2: 575-605.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A42-Grand-Her&Tsai-post print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A41</td>
+    <td class="pub-pub">Her, One-Soon and Tsai, Hui-Chin. 2014 Color isn’t silent, shallow isn’t deep: Two case studies of evaluating silent elements. <a href="http://www.ling.sinica.edu.tw/LL/en/News"  target="_blank" class="pub_a">Language and Linguistics</a> 15.6: 775-800.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A41-Color-Her&Tsai-Post-Print.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A40</td>
+    <td class="pub-pub">何萬順, 廖元豪 & 蔣侃學. 2014.〈論現行大學英語畢業門檻的適法性：以政大法規為實例的論證〉(On the legality of universities’ English benchmark policy for graduation: A case study of NCCU’s relevant regulations). 《<a href="https://journals.plos.org/plosone/s/journal-information"  target="_blank" class="pub_a">PLoS ONE</a> 12(9): e0185047. <a href="http://www.law.nccu.edu.tw/review/super_pages.php?ID=review1"  target="_blank" class="pub_a">政大法學評論</a>》(National Chengchi University Law Review) 139:1-64.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">TSSCI</td>
+    <td class="pub-download">
+        <a href="publication/A40-NCCU-Law.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A39</td>
+    <td class="pub-pub">何萬順, 周祝瑛, 蘇紹雯, 蔣侃學 & 陳郁萱. 2013.〈<a href="http://ericdata.com/tw/detail.aspx?no=200924"  target="_blank" class="pub_a">我國大學英語畢業門檻政策之檢討</a>〉(A critical review of universities’ English benchmark policy for graduation). 《<a href="http://www.edubook.com.tw/tw/Journal_list.aspx?no=1094"  target="_blank" class="pub_a">教育政策論壇</a>》(Educational Policy Forum) 16.3:1-30.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">TSSCI</td>
+    <td class="pub-download">
+        <a href="publication/A39-EPF.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A38</td>
+    <td class="pub-pub">Her, One-Soon & Lai, Wan-Jun. 2012. Classifiers: The many ways to profile ‘one’, a case study of Taiwan Mandarin. <a href="http://dx.doi.org/10.1142/S1793840612400053"  target="_blank" class="pub_a">International Journal of Computer Processing of Oriental Languages</a> 24.1:79-94.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A38-Classifier-Her&Lai.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A37</td>
+    <td class="pub-pub">Her, One-Soon. 2012. Distinguishing classifiers and measure words: A mathematical perspective and implications. <a href="http://www.elsevier.com/locate/lingua"  target="_blank" class="pub_a">Lingua</a> 122.14: 1668-1691. November 2012.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A37-C-M_Distinction_MATH-FINAL-Rev.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A36</td>
+    <td class="pub-pub">Her, One-Soon. 2012. Structure of classifiers and measure words: A lexical functional Account.<a href="http://www.ling.sinica.edu.tw/LL/en/News"  target="_blank" class="pub_a">Language and Linguistics</a> 13.6:1211-1511. December 2012.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A36-j2012_6_05_9276.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A35</td>
+    <td class="pub-pub">何萬順. 2010b.〈論台灣華語的在地化〉(On the Indigenization of Taiwan Mandarin)，《澳門語言學刊》(Journal of Macau Linguistics Association) 35.1: 19-29。</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A35-Macao.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A34</td>
+    <td class="pub-pub">Her, One-Soon & Hseih, Chen-Tien. 2010. On the Semantic Distinction between Classifiers and Measure Words in Chinese. <a href="http://www.ling.sinica.edu.tw/LL/en/News"  target="_blank" class="pub_a">Language and Linguistics</a> 11.3: 527-550.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A34-C-M_Distinction.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A33</td>
+    <td class="pub-pub">何萬順, 陳靜宜 & 劉濟慈. 2010. 〈國立大學教師義務性機構典藏之可行性探討：以政大為例〉(Public universities' OA IR mandate: The case of NCCU).《<a href="http://xoops.lib.nccu.edu.tw/modules/PDlinks3/visit.php?cid=35&lid=146"  target="_blank" class="pub_a">圖書與資訊學刊</a>》(<a href="http://xoops.lib.nccu.edu.tw/modules/PDlinks3/visit.php?cid=35&lid=146"  target="_blank" class="pub_a">Journal of Librarianship and Information Studies</a>) 2.2: 1-19.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A33-IR.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A32</td>
+    <td class="pub-pub">何萬順 & 劉濟慈. 2009e. 〈國立大學教師的「機構典藏」與「自我典藏」：鼓勵抑或強制？〉(Public University Teachers' Participation in Institute Repository and Self-Archive: A Mandate?).《<a href="http://xoops.lib.nccu.edu.tw/modules/PDlinks3/visit.php?cid=35&lid=146"  target="_blank" class="pub_a">圖書與資訊學刊</a>》(<a href="http://xoops.lib.nccu.edu.tw/modules/PDlinks3/visit.php?cid=35&lid=146"  target="_blank" class="pub_a">Journal of Librarianship and Information Studies</a>) 1.4.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A32-SA.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A31</td>
+    <td class="pub-pub">Her, One-Soon. 2009d. Apparent Subject-object Inversion in Chinese. <a href="http://www.degruyter.com/view/j/ling"  target="_blank" class="pub_a">Linguistics</a> 47.5: 1143-1181.[NSC-95-2411-H-004-027, NSC-94-2411-H-004-030]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A31-Extent.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A30</td>
+    <td class="pub-pub">Her, One-Soon. 2009c. Unifying the Long Passive and the Short Passive: On the Bei Construction in Taiwan Mandarin. <a href="http://www.ling.sinica.edu.tw/LL/en/News"  target="_blank" class="pub_a">Language and Linguistics</a> 10.3: 421-470. [NSC-97-2410-112-MY2]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A30-Unified_Bei.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A29</td>
+    <td class="pub-pub">何萬順. 2009b. 〈語言與族群認同：從台灣外省族群的母語與台灣華語談起〉(Language and Group Identity: On Taiwan Mainlanders’ Mother Tongue and Taiwan Mandarin). <a href="http://www.ling.sinica.edu.tw/LL/en/News"  target="_blank" class="pub_a">Language and Linguistics</a> 10.2, 375-419. [NSC-95-2411-H-004-027, NSC-94-2411-H-004-030]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A29-Lang&group.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A28</td>
+    <td class="pub-pub">何萬順. 2009a. 〈台灣華語與本土母語：衝突抑或相容？〉(On the Compatibility between Taiwan Mandarin and Taiwan’s indigenous languages).《海翁台語文教學季刊》Hai-ang Tai-gi-bun Kau-hak Kui-khan (Haiang Quarterly of Teaching Taiwanese) 3, 26-39.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A28-TM&MT.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A27</td>
+    <td class="pub-pub">Her, One-Soon. 2007d. Ten Characters in Search of a Group: A Sketch of Bloomsbury. <a href="http://www.scientificjournals.org/current_issue.htm"  target="_blank" class="pub_a">Journal of Humanities and Social Sciences</a> 1.2, 1-7.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A27-Bloomsbury.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A26</td>
+    <td class="pub-pub">Her, One-Soon and I-Ping Wan. 2007c. Corpus and the nature of grammar revisite. <a href="http://www.concentric-linguistics.url.tw/ch/issues_detail.php?nid=18"  target="_blank" class="pub_a">Concentric: Studies in Linguistics</a> 33.1, 67-111.[NSC-95-2411-H-004-027, NSC-94-2411-H-004-030]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A26-Reply.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A25</td>
+    <td class="pub-pub">Her, One-Soon. 2007b. Argument-function mismatches in Mandarin Resultatives: A lexical mapping account <a href="https://www.sciencedirect.com/science/article/pii/S0024384106000180"  target="_blank" class="pub_a">Lingua</a> 117.1, 221-246.[NSC-92-2411-H-004-024, NSC-93-2411-H-004-006]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A25-Mismatches.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A24</td>
+    <td class="pub-pub">Her, One-Soon. 2007a. Between Globalization and Indigenization: On Taiwan's Pinyin Issue from the Perspectives of the New Economy. (Translated version of Her 2005c) Journal of Humanities and Social Sciences 1.1, 1-22.[NSC-92-2411-H-004-024, NSC-93-2411-H-004-006]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A24-Pinyin-Eng.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A23</td>
+    <td class="pub-pub">Her, One-Soon. 2006. Justifying Part-of-speech Assignments for Mandarin Gei. <a href="https://www.sciencedirect.com/science/article/pii/S0024384105000902"  target="_blank" class="pub_a">Lingua</a> 116.8, 1274-1302. [NSC-92-2411-H-004-024, NSC-93-2411-H-004-006]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A23-Gei.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A22</td>
+    <td class="pub-pub">何萬順. 2005c.「全球化」與「在地化」：從新經濟的角度看台灣的拼音問題〉(Between Globalization and Indigenization: On Taiwan's Pinyin Issue from the Perspectives of the New Economy。《<a href="https://www.rchss.sinica.edu.tw/pub/pub_journal.php?vol=17&num=04&year=2005"  target="_blank" class="pub_a">人文及社會科學集刊</a>》(Journal of Social Sciences and Philosophy) 17.4, 785-822. [NSC-92-2411-H-004-024, NSC-93-2411-H-004-006]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">TSSCI</td>
+    <td class="pub-download">
+        <a href="publication/A22-Pinyin.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A21</td>
+    <td class="pub-pub">Her, One-Soon. 2005b. Optimality-Theoretic Lexical Mapping Theory: A case study of locative inversion. <a href="https://doi.org/10.4018/jthi.2006010105"  target="_blank" class="pub_a">International Journal of Technology and Human Interaction</a> 2.1, 67-94. [NSC-92-2411-H-004-024, NSC-93-2411-H-004-006]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A21-OT-LMT.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A20</td>
+    <td class="pub-pub">Her, One-Soon. 2005a. <a href="https://www.semanticscholar.org/paper/'Driving'-towards-Simplicity%3A-In-(Partial)-Defense-Her/c6fb65dff16e6494d6979c229cfed47706fb9081"  target="_blank" class="pub_a">'Driving' towards simplicity: In (partial) defense of the 'armchair linguist'</a> . Journal of Language and Linguistics 4.1, 56-73. [NSC-92-2411-H-004-024]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A20-Driving.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A19</td>
+    <td class="pub-pub">Her, One-Soon. 2004. Argument-Function Linking in Resultatives. <a href="http://www.concentric-linguistics.url.tw/ch/issues_detail.php?nid=15"  target="_blank" class="pub_a">Concentric: Studies in Linguistics</a> 30.2, 1-34 [NSC-91-2411-H-0047, NSC-92-2411-H-004-024]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A19-Resultatives.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A18</td>
+    <td class="pub-pub">Her, One-Soon. 2003. Chinese inversion constructions within a simplified LMT. <a href="http://www.cuhk.edu.hk/journal/jcl/jcl/mono_ser/19/content_19.html"  target="_blank" class="pub_a">Journal of Chinese Linguistics</a>, Lexical-Functional Grammar Analysis of Chinese, Adams Bodomo and Kang Kwong Luke (guest editors), 1-31. [NSC-91-2411-H-0047]</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A18-Loc-Inv.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A17</td>
+    <td class="pub-pub">何萬順, 1998. 漢語主題在語法層面上的限制 (Syntactic constraints on topicalization in Chinese) 《<a href="http://thesis.lib.nccu.edu.tw/cgi-bin/gs31/gsweb.cgi?o=dnccujrn"  target="_blank" class="pub_a">國立政治大學學報</a>》(Journal of the National Chengchi University) 77, 1-13 </td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A17-Topic2.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A16</td>
+    <td class="pub-pub">Her, One-Soon, 1997. Interaction and explanation: the case of variation in Chinese VO construction. <a href="http://www.cuhk.edu.hk/journal/jcl/jcl/chin_lin/25/content_1.html"  target="_blank" class="pub_a">Journal of Chinese Linguistics</a> 25, 146-165</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A16-VO.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A15</td>
+    <td class="pub-pub">Her, One-Soon, 1996. Variation of Mandarin VO constructions: a synchronic account. <a href="https://www.degruyter.com/view/j/ling.1996.34.issue-4/ling.1996.34.4.733/ling.1996.34.4.733.xml?format=INT"  target="_blank" class="pub_a">Linguistics</a> 34.4, 733-752</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A15-VO-synchronic.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A14</td>
+    <td class="pub-pub">Her, One-Soon, 1996. Silence is gold: on the delayed oral practice. 《<a href="http://thesis.lib.nccu.edu.tw/cgi-bin/gs31/gsweb.cgi?o=dnccujrn"  target="_blank" class="pub_a">國立政治大學學報</a>》(Journal of the National Chengchi University) 72, 413-458</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A14-Silence.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A13</td>
+    <td class="pub-pub">何萬順, 1995c. 外語教學方法研究的三個層面 (Three aspects of research in language teaching)《<a href="http://readopac1.ncl.edu.tw/nclserialFront/search/guide/detail.jsp?sysId=0006511874&dtdId=000075&search_type=detail&mark=basic&la=ch"  target="_blank" class="pub_a">國立政治大學研究通訊</a>》(National Chengchi University Research Bulletin) 4, 65-76</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A13-Teaching.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A12</td>
+    <td class="pub-pub">Her, One-Soon, 1995b. Generating function words in machine translation. 《<a href="http://thesis.lib.nccu.edu.tw/cgi-bin/gs31/gsweb.cgi?o=dnccujrn"  target="_blank" class="pub_a">國立政治大學學報</a>》(Journal of the National Chengchi University) 70, 25-46</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A12-NCCU-MT.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A11</td>
+    <td class="pub-pub">Her, One-Soon, 1995a. Chinese segmentation problem.《<a href="http://english.nccu.edu.tw/journals/riki.php?id=%A4%E5%A4s%B5%FB%BD%D7%A1G%A4%E5%BE%C7%BBP%A4%E5%A4%C6&CID=2"  target="_blank" class="pub_a">文山評論</a>》(Wenshan Review) 1, 79-90</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A11-Segmentation.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A10</td>
+    <td class="pub-pub">何萬順, 1994b，計算機處理自然語言之研究與語法理論及其形式組之應用 (Applications of syntactic theories and formalisms in NLP research)《<a href="http://readopac1.ncl.edu.tw/nclserialFront/search/guide/detail.jsp?sysId=0006511874&dtdId=000075&search_type=detail&mark=basic&la=ch"  target="_blank" class="pub_a">國立政治大學研究通訊</a>》(National Chengchi University Research Bulletin) 2, 102-27</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A10-NLP.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A09</td>
+    <td class="pub-pub">Her, One-Soon, 1994a. English reading proficiency of Taiwan college graduates: a study based on the miscue analysis. 《<a href="http://thesis.lib.nccu.edu.tw/cgi-bin/gs31/gsweb.cgi?o=dnccujrn"  target="_blank" class="pub_a">國立政治大學學報</a>》(Journal of the National Chengchi University) 69, 435-58</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A09-Miscue.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A08</td>
+    <td class="pub-pub">何萬順, 1993b，互動：語言研究的一個新方向 (Interaction: A new direction in linguistic research)《國立政治大學研究通訊》(National Chengchi University Research Bulletin) 1, 75-102</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A08-Interaction.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A07</td>
+    <td class="pub-pub">Her, One-Soon, 1993a. Explanations of age difference in foreign accent and some implications for teaching foreign languages. 《<a href="http://thesis.lib.nccu.edu.tw/cgi-bin/gs31/gsweb.cgi?o=dnccujrn"  target="_blank" class="pub_a">國立政治大學學報</a>》(Journal of the National Chengchi University) 67, 217-42</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A07-Accent.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A06</td>
+    <td class="pub-pub">Her, One-Soon, 1991b. Topic as a grammatical function in Chinese. <a href="https://www.sciencedirect.com/science/article/pii/002438419190011S"  target="_blank" class="pub_a">Lingua</a> 84.1, 1-23.</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A06-Topic.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A05</td>
+    <td class="pub-pub">Her, One-Soon, Dan Higinbotham, and Joseph Pentheroudakis, 1991. An LFG-based machine translation system. <a href="http://ftp.math.utah.edu/pub/tex/bib/toc/ijcpol.html"  target="_blank" class="pub_a">Computer Processing of Chinese and Oriental Languages</a> 5.3/4, 285-97</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">INSPEC</td>
+    <td class="pub-download">
+        <a href="publication/A05-MT.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A04</td>
+    <td class="pub-pub">Her, One-Soon, 1991a. On the Mandarin possessive and existential verb YOU and its idiomatic expressions. <a href="https://www.sciencedirect.com/science/article/abs/pii/038800019190023T"  target="_blank" class="pub_a">Language Sciences</a> 13.3/4, 381-398</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other">SSCI, AHCI</td>
+    <td class="pub-download">
+        <a href="publication/A04-You.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A03</td>
+    <td class="pub-pub">Her, One-Soon, 1990. Historical development of BA and JIANG in the Tang Dynasty. <a href="https://www.cambridge.org/core/journals/language-variation-and-change/article/historical-development-of-ba-and-jiang-in-the-tang-dynasty/11CEF557AC90A346A953E14F4790363A"  target="_blank" class="pub_a">Language Variation and Change</a> 2.3, 277-294</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A03-BA.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A02</td>
+    <td class="pub-pub">Her, One-Soon, 1989. An LFG account for Chinese BEI sentences. <a href="http://clta.osu.edu/jclta.htm"  target="_blank" class="pub_a">Journal of the Chinese Language Teachers Association</a> 24.3, 67-89</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A02-Bei.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">A01</td>
+    <td class="pub-pub">Her, One-Soon, 1985-6. To dispense with OV word order in Modern Mandarin. Papers in East Asian Languages 3, 18-47</td>
+    <td class="pub-catagory">Refereed Journal Articles</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/A01-OV.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+                    <!--Bibliographies-->
+<!--新增 Bibliographies
+1.複製以下這段<tr> </tr>包住的內容
+2.更改((括號包住的內容))，括號要記得刪掉
+3.檔名請正確命名 B00-檔名，並放在publication裡面
+4.其他都不用改！儲存後，將新的程式碼上傳至ftp
+<tr>
+    <td class="pub-title">((填入編號 B00 ))</td> 
+    <td class="pub-pub">((填入著作名稱))<a href="((填入網站連結，無則空白即可))"  target="_blank" class="pub_a">((填入網站名稱，無則空白即可))</a> </td>
+    <td class="pub-catagory">Bibliographies</td>
+    <td class="pub-other">((填入期刊種類EX:TSSCI，無則空白即可))</td>
+    <td class="pub-download">
+        <a href="publication/((填入B00-檔名))" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+-->
+
+<tr>
+    <td class="pub-title">B02</td>
+    <td class="pub-pub">Her, One-Soon, Wan-Ting Li, & Yu-Hsuan Chen. To appear. Bibliography on Chinese classifiers and measure words. To appear in <a href="http://tjl.nccu.edu.tw/main/volumes/tw"  target="_blank" class="pub_a">Taiwan Journal of Linguistics</a>. </td>
+    <td class="pub-catagory">Bibliographies</td>
+    <td class="pub-other">THCI Core</td>
+    <td class="pub-download">
+        <a href="publication/B02-Bibliography-Short-Rev.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">B01</td>
+    <td class="pub-pub">Her, One-Soon, Hsiao-Chien Feng, I-Hsuan Lu, & Meng-Ying Chen. 2009. Bibliography on ba and bei. <a href="http://tjl.nccu.edu.tw/main/volumes/90/titles/tw"  target="_blank" class="pub_a">Taiwan Journal of Linguistics</a> 7.2: 49-79. </td>
+    <td class="pub-catagory">Bibliographies</td>
+    <td class="pub-other">THCI Core</td>
+    <td class="pub-download">
+        <a href="publication/B01-BIBLIOGRAPHY ON BA AND BEI.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+                    <!--Book Chapters-->
+<!--新增 Book Chapters
+1.複製以下這段<tr> </tr>包住的內容
+2.更改((括號包住的內容))，括號要記得刪掉
+3.檔名請正確命名 C00-檔名，並放在publication裡面
+4.其他都不用改！儲存後，將新的程式碼上傳至ftp
+<tr>
+    <td class="pub-title">((填入編號 C00 ))</td> 
+    <td class="pub-pub">((填入著作名稱))<a href="((填入網站連結，無則空白即可))"  target="_blank" class="pub_a">((填入網站名稱，無則空白即可))</a> </td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other">((填入期刊種類EX:TSSCI，無則空白即可))</td>
+    <td class="pub-download">
+        <a href="publication/((填入C00-檔名))" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+-->
+<tr>
+    <td class="pub-title">C11</td>
+    <td class="pub-pub">何萬順. 2016. 〈語言癌不癌？〉，《語言癌不癌？語言學家的看法》，何萬順、蔡維天、張榮興、徐嘉慧、魏美瑤、何德華合著。聯經出版。頁37-52。</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C11-《語言癌不癌？語言學家的看法》前50頁.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C10</td>
+    <td class="pub-pub">Her, One-Soon. 2013. Lexical Mapping Theory revisited. In From Quirky Case to Representing Space: Papers in Honor of Annie Zaenen, edited by Yvonne Tracy Holloway King and Valeria de Paiva, Stanford, CA: CSLI Publications, 47-60. <a href="http://cslipublications.stanford.edu/site/ONLN.shtml" target="_blank" class="pub_a">Available on-line</a>
+    </td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C10-LMT-PUBLISHED.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C09</td>
+    <td class="pub-pub">Her, One-Soon & Dun-Hong Deng. 2012. Lexical mapping in Yami verbs. In Proceedings of the LFG12 Conference, edited by Miriam Butt and Tracy Holloway King, Stanford, CA: CSLI Publications. 312-322. <a href="http://cslipublications.stanford.edu/LFG/17/lfg12.toc.html" target="_blank" class="pub_a">Available on-line</a>
+    </td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C09-lfg12herdeng.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C08</td>
+    <td class="pub-pub">Her, One-Soon. 2010. A Suppressionist Approach to Function-Argument Mismatches. In Selected Papers from the 2009 Conference of the Australian Linguistic Society, edited by Yvonne Treis & Rik De Busser.</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C08-her.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C07</td>
+    <td class="pub-pub">何萬順 2009，〈漢語中施事賓語的連結問題〉，亢世勇、賴金錠、王興隆、姬東鴻編《詞彙語義學的新進展：第十屆漢語詞彙語義學論文集》，88-94。新加坡東方語言信息處理學會。</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C07-CLSW.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C06</td>
+    <td class="pub-pub">Her, One-Soon, 2007. Linking agentive objects in Mandarin Chinese. In Selected Papers from the 2006 Conference of the Australian Linguistic Society, edited by Mary Laughren and Ilana Mushin. </td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C06-Agentive.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C05</td>
+    <td class="pub-pub">Her, One-Soon, 1999. Interaction of thematic structure and syntactic structures: on Mandarin dative alternations. In Chinese Languages and Linguistics: V, Interaction (中國境內語言暨語言學 第五輯: 語言中的互動), 373-412, Taipei: Institute of Linguistics, Academia Sinica</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C05-Dative.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C04</td>
+    <td class="pub-pub">Hui-Ting Huang and Her, One-Soon, 1998. Mandarin locative inversion and relation-changing rules. In Selected Papers from the Second International Symposium on Languages in Taiwan, 287-304, Taipei: Crane Publishing</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C04-Huang.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C03</td>
+    <td class="pub-pub">Her, One-Soon, Dan Higinbotham, and Joseph Pentheroudakis, 1994. Lexical and idiomatic transfer in machine translation: an LFG approach. In Don Ross and Dan Brink (eds.) Research in Humanities Computing 3, 200-16, Oxford: Oxford University Press</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C03-Idiom.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C02</td>
+    <td class="pub-pub">Her, One-Soon, 1994, Interaction of syntactic changes. In Chinese Languages and Linguistics: II, Historical Linguistics (中國境內語言暨語言學 第二輯: 歷史語言學), 263-93, Taipei: Academia Sinica</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/C02-Changes.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">C01</td>
+    <td class="pub-pub">Her, One-Soon, 1991. Identifying the Chinese word in machine translation. Horizons: Proceedings of the 32nd Annual Conference of American Translators Association, 1991</td>
+    <td class="pub-catagory">Book Chapters</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+                    <!-- Books and Monographs -->
+<!--新增 Books and Monographs
+1.複製以下這段<tr> </tr>包住的內容
+2.更改((括號包住的內容))，括號要記得刪掉
+3.檔名請正確命名 D00-檔名，並放在publication裡面
+4.其他都不用改！儲存後，將新的程式碼上傳至ftp
+<tr>
+    <td class="pub-title">((填入編號 D00 ))</td> 
+    <td class="pub-pub">((填入著作名稱))<a href="((填入網站連結，無則空白即可))"  target="_blank" class="pub_a">((填入網站名稱，無則空白即可))</a> </td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other">((填入期刊種類EX:TSSCI，無則空白即可))</td>
+    <td class="pub-download">
+        <a href="publication/((填入D00-檔名))" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+-->
+<tr>
+    <td class="pub-title">D08</td>
+    <td class="pub-pub">何萬順、蔡維天、張榮興、徐嘉慧、魏美瑤、何德華。2016。《語言癌不癌？語言學家的看法》。聯經出版。 (ISBN: 9789570846744)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/D08-《語言癌不癌？語言學家的看法》前50頁.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">D07</td>
+    <td class="pub-pub">Her, One-Soon, 2010. Interaction and Variation in the Chinese VO Construction, Revised edition, Taipei: Crane Publishing <a href="http://www.crane.com.tw/"  target="_blank" class="pub_a">文鶴出版公司</a> (ISBN 957-9463-97-2)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/D07-Interaction-REV.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">D06</td>
+    <td class="pub-pub">Her, One-Soon, 2008, Grammatical Functions and Verb Subcategorization in Mandarin Chinese, Revised edition, Taipei: Crane Publishing <a href="http://www.crane.com.tw/"  target="_blank" class="pub_a">文鶴出版公司</a> (ISBN 978-986-147-273-7)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/D06-HER_book_V_Subcat.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">D05</td>
+    <td class="pub-pub">Her, One-Soon, 1999. 超頻英漢速檢頁 (Lexijet 2: Frequency-based Quick English-Chinese Reference). Taipei: Vedas Global 會形文化事業 (ISBN 957-99264-7-6)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/D05-LexiJet2.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">D04</td>
+    <td class="pub-pub">Her, One-Soon, 1998. 快捷英漢速檢頁 (Lexijet: Quick English-Chinese Reference). Taipei: Vedas Global 會形文化事業 (ISBN 957-992646-8)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/D04-LexiJet.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td class="pub-title">D03</td>
+    <td class="pub-pub">Her, One-Soon , 1997. 三民精解英漢辭典 (San Min Compact English-Chinese Dictionary), Taipei: San Min Book Company <a href="http://www.sanmin.com.tw/"  target="_blank" class="pub_a">三民書局</a> (ISBN 957-14-2204-5)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">D02</td>
+    <td class="pub-pub">Her, One-Soon (ed.), 1995. 三民新英漢辭典 (San Min New English-Chinese Dictionary), Taipei: San Min Book Company <a href="http://www.sanmin.com.tw/"  target="_blank" class="pub_a">三民書局</a> (ISBN 957-14-2569-9)</td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">D01</td>
+    <td class="pub-pub">Her, One-Soon, 1991, Grammatical Functions and Verb Subcategorization in Mandarin Chinese, Taipei: Crane Publishing <a href="http://www.crane.com.tw/"  target="_blank" class="pub_a">文鶴出版公司</a>
+    </td>
+    <td class="pub-catagory">Books and Monographs</td>
+    <td class="pub-other"></td>
+    <td class="pub-download">
+        <a href="publication/D01-PhD.pdf" download>
+            <img src="img/download.png" width="30" height="30"></img>
+        </a>
+    </td>
+</tr>
+                    <!--Conference Papers-->
+<!--新增 Conference Papers
+1.複製以下這段<tr> </tr>包住的內容
+2.更改((括號包住的內容))，括號要記得刪掉
+3.檔名請正確命名 E00-檔名，並放在publication裡面
+4.其他都不用改！儲存後，將新的程式碼上傳至ftp
+<tr>
+    <td class="pub-title">((填入編號 E00 ))</td> 
+    <td class="pub-pub">((填入著作名稱))<a href="((填入網站連結，無則空白即可))"  target="_blank" class="pub_a">((填入網站名稱，無則空白即可))</a> </td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other">((填入期刊種類EX:TSSCI，無則空白即可))</td>
+    <td class="pub-download"></td>
+</tr>
+-->
+<tr>
+    <td class="pub-title">E64</td>
+    <td class="pub-pub">何萬順。2018。台灣的語言價值觀與其在華語教學中的地位（Taiwan’s Language Attitude and Its Role in Teaching Chinese as a Second Language）。主題演講（Plenary Speech），第17屆台灣華語文教學年會暨國際學術研討會（2018 International Annual Conference of Teaching Chinese as a Second Language），2018年12月21至23日，東華大學。</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E63</td>
+    <td class="pub-pub">Chen, Yupin and One-Soon Her. 2018. On Tag Questions in Chinese: From the Perspective of Confirmation versus Information Questions. Presented at the Workshop of Discourse Markers: Specializing in Comment Clauses, November 9-11, 2018, Sun Yat-Sen University, Guangzhou, China.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E62</td>
+    <td class="pub-pub">Chen, Yupin and One-Soon Her. 2018. Multiplicational View on Classifiers and Measure Words: Evidence from Mandarin-Speaking Children’s Spontaneous Speech. Presented at the Japanese Society for Language Sciences 20th Annual International Conference (JSLS2018), August 2-3, 2018, Bunkyo Gakuin University.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E61</td>
+    <td class="pub-pub">Her, One-Soon, Ying-Chun Chen, and Nai-Shing Yen*. 2017. Neural Correlates of Quantity Processing of Chinese Numeral Classifiers. Presented at 2017 Cross-Strait Forum on the Joint Development of Cognitive Science Studies (Forum 2017), the Eleventh International Conference on Cognitive Science (ICCS 2017), September 1-3, 2017, National Taiwan University Convention Center, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E60</td>
+    <td class="pub-pub">Her, One-Soon, Ying-Chun Chen, Nai-Shing Yen, and Chia-Chi Chen*. 2017. Quantity Processing of Chinese Classifiers and Measure Words. Presented at the 29th Association for Psychological Science (APS) Annual Convention, May 25-28, 2017, the Sheraton Boston Hotel, Boston, MA, USA.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E59</td>
+    <td class="pub-pub">Chen, Ying-Chun, One-Soon Her, Denise Hsien Wu, and Nai-Shing Yen. 2016. The Neural Correlates of Mathematical Processing of Chinese Classifiers and Measure Words. Presented at the 22nd Annual Meeting of the Organization for Human Brain Mapping (2016 OHBM), June 26-30, 2016, Palexpo Exhibition and Congress Center, Geneva, Switzerland.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E58</td>
+    <td class="pub-pub">Chen, Ying-Chun, Marc Tang, One-Soon Her, and Nai-Shing Yen. 2016. Justifying the Left-branching Analysis of Chinese Classifier Phrases: Evidence from Speech Perception and Production. Presented at the 8th Conference on Language, Discourse, and Cognition (CLDC 2016), May 13-14, 2016, National Taiwan University, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E57</td>
+    <td class="pub-pub">Her, One-Soon, Hui-Chin Tsai, Kun-Han Lin, Marc Tang, and Meng-Chang Lee. 2016. Numeral bases and numeral classifiers in SMATTI: Word order variation in Tibeto-Burman. Presented at the Conference of New Ways of Analyzing Variation–Asia Pacific 4 (NWAV AP4), April 22-24, 2016, National Chung Cheng University, Chiayi, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E56</td>
+    <td class="pub-pub">Chen, Ying-Chun, One-Soon Her, Denise Hsien Wu, and Nai-Shing Yen. 2016. Semantic attributes and mathematical values in the processing of Chinese classifiers and measure words. Presented at the 2016 Annual Meeting of the Cognitive Neuroscience Society, April 2-5, 2016, New York Hilton Midtown, New York.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E55</td>
+    <td class="pub-pub">Chen, Ying-Chun, One-Soon Her, Denise Hsien Wu, and Nai-Shing Yen. 2016. Semantic Attributes and mathematical values in the processing of Chinese classifiers and measure words. Presented at the 2016 Annual Meeting of Taiwan Society of Cognitive Neuroscience, January 23, 2016 National Chengchi University, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E54</td>
+    <td class="pub-pub">Her, One-Soon, Hui-Chin Tsai, Kun-Han Lin, Marc Tang, Meng-Chang Lee. 2015. Unification of Numeral Bases and Numeral Classifiers: Evidence from SMATTI. Paper presented at the Workshop on the syntax and semantics of numerals, the 48th Annual Meeting of the Societas Linguistica Europaea. Leiden University Centre for Linguistics (LUCL), Leiden, 2-5 September 2015.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E53</td>
+    <td class="pub-pub">Her, One-Soon. 2015. Two Sides of a Coin Named one: Unifying Plural Markers and Numeral Classifiers. Keynote speech presented at the International Conference on Applied Linguistics, National Chiayi University, Chiayi, May 30-31, 2015.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E52</td>
+    <td class="pub-pub">Her, One-Soon, Ying-Chun Chen, Denise Hsian Wu, Nai-Shin Yen. 2015. The cognitive mechanism underlying the convergence and divergence of Chinese numeral classifier. Presented at the 2014 Annual Meeting of Research Center for Mind, Brain, and Learning心腦學中心暨台灣心智科學腦造影中心綜合成果發表會, January 28, 2015, NCCU, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E51</td>
+    <td class="pub-pub">Her, One-Soon, Hui-Chin Tsai, Kun-Han Lin, Marc Tang, Meng-Chang Lee. 2015. Numeral Bases and Numeral Classifiers in SMATTI: A Typological Sandwich. Paper presented at the dissemination workshop Gender and Classifiers: Areal and Genealogical Perspectives. Max Planck Institute for Psycholinguistics, Nijmegen, January 26-27, 2015.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E50</td>
+    <td class="pub-pub">Her, One-Soon & Yun-Ru Chen. 2013. Unification of numeral classifiers and plural markers: Empirical facts and implications. Presented at the 27th Pacific Asia Conference on Language, Information, and Computation (PACLIC 27), November 22-24, 2013, National Chengchi University, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E49</td>
+    <td class="pub-pub">Her, One-Soon. 2013. English plural markers and Chinese numeral classifiers: Convergence and divergence. Keynote speech delivered at the 2013 International Conference on Language, Literature, and Teaching & Book Fair, December 20, 2013, National Chin-Yi University of Technology, Taichung, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E48</td>
+    <td class="pub-pub">Her, One-Soon & Dun-Hong Deng. 2012. Lexical mapping in Yami verbs. Paper presented at the 17th International Lexical Functional Grammar Conference (LFG 2012), June 28-July 1, 2012, Udayana University, Bali, Indonesia.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E47</td>
+    <td class="pub-pub">Her, One-Soon. 2012. Classifiers and measure words: Evidence for a unified universal structure. Paper presented at The 13th International Symposium on Chinese Languages and Linguistics (IsCLL-13), June 1-3, 2012, National Taiwan Normal University, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E46</td>
+    <td class="pub-pub">Her, One-Soon. 2012. Numerals and classifiers: Convergence, divergence, and Greenberg’s Universal 20A. Keynote speech given at the International Conference on Language Evolution: Origin and Change of Language in Descriptive and Formal Linguistic Theories, May 25, 2012, National Kaohsiung Normal University, Kaohsiung, Taiwan. </td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E45</td>
+    <td class="pub-pub">Her, One-Soon. 2012. Word order typology and structure of numbers and classifiers. Paper presented at The Third Symposium on Linguistics Research Methods, March 16, April 13, May 11, and June 1, 2012, National Chengchi University, Taipei, Taiwan.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E44</td>
+    <td class="pub-pub">Her, One-Soon. 2011. Structure of classifiers and measure words: A Lexical Functional account. Invited talk given at the 16th International Lexical Functional Grammar Conference (LFG 2011), July 16-19, 2011, University of Hong Kong.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E43</td>
+    <td class="pub-pub">Her, One-Soon, 2011. Classifiers: The many ways to profile ‘one’. Paper presented at the Chinese Lexical Semantics Workshop 2011 (CLSW2011), National Taiwan University, Taipei, Taiwan, 3-5 May, 2011 </td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E42</td>
+    <td class="pub-pub">Her, One-Soon, 2010. Distinguishing Classifiers and Measure Words. Paper presented at the The 4th Conference on Language, Discourse and Cognition (CLDC2010), National Taiwan University, Taipei, May 1-2, 2010</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E41</td>
+    <td class="pub-pub">Her, One-Soon, 2010. Distinguishing classifiers and measure Words. Paper presented at the 2010 Australia Linguistic Society Conference (ALS2010), The University of Queensland, St Lucia, Brisbane, Queensland, Australia, 7–9 July, 2010</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E40</td>
+    <td class="pub-pub">Her, One-Soon, 2009. Linking apparent agent objects in Chinese. Paper presented at the Tenth Chinese Lexical Semantics Workshop (CLSW 2009), Ludong University, Yantai, China, 27-31 July, 2009.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E39</td>
+    <td class="pub-pub">Her, One-Soon, 2009. A Suppressionist Approach to Argument-Function Mismatches. Paper presented at the 2009 Australia Linguistic Society Conference, La Trobe University, Melbourne, Australia, 9-11 July, 2009.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E38</td>
+    <td class="pub-pub">Her, One-Soon, 2009. Unifying the Long Passive and the Short Passive in Chinese: Evidence from Corpus. Paper to be presented at 2009 Hawaii International Conference on Arts and Humanities, Honolulu, Hawaii, 9-12 January, 2009.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E37</td>
+    <td class="pub-pub">Her, One-Soon, 2008. 語言與族群認同：台灣外省族群的母語與台灣華語. Paper presented at首屆兩岸四地語言學論壇 (The First Linguistics Forum in the Great China), Macao Polytechnic Institute, 6-7 December, 2008.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E36</td>
+    <td class="pub-pub">Her, One-Soon, 2008. 從多元族群語言看外省族群的母語與台灣華語. Paper presented at第七屆臺灣語言及其教學國際學術研討會(The Seventh International Symposium on Taiwanese Languages and Teaching), 6-7 September, 2008.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E35</td>
+    <td class="pub-pub">Her, One-Soon, 2008. 絕滅與新生：從多語言文化看外省族群的母語與國語. Paper presented at東吳大學外語學院2008年校際學術研討會：多語言文化─教學與研究 (2008 Soochow University College of Foreign Languages and Cultures Academic Conference: Multilingual Cultures: Teaching and Research), 29 March, 2008.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E34</td>
+    <td class="pub-pub">Her, One-Soon, 2007. Grammatical representation of idioms in LFG. Paper presented at the 2007 Annual Conference of Australian Linguistic Society, September 26-28, 2007, Adelaide, Australia.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E33</td>
+    <td class="pub-pub">Her, One-Soon, 2007. Globalization of regional academic journals: A case study of three linguistics journals published in Taiwan. Paper presented at International Conference on the Publishing and Presenting Research Internationally: Issues for Speakers of English as an Additional Language, January 11-13, 2007, University of La Laguna, Tenerife, Spain.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E32</td>
+    <td class="pub-pub">Her, One-Soon, 2006. Linking agentive objects in Mandarin Chinese. Paper presented at the 2006 Annual Conference of Australian Linguistic Society, July 7-9, 2006, Queensland University, Brisbane, Australia.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E31</td>
+    <td class="pub-pub">Her, One-Soon, 2005. Argument-function mismatches in Mandarin Chinese: A lexical mapping account. Paper presented at the Workshop on Theoretical East Asian Linguistics, July 22-23, 2005, Harvard University.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E30</td>
+    <td class="pub-pub">Her, One-Soon, 2004. 「全球化」或「在地化」：從新經濟的角度看台灣的拼音問題 (Between Globalization and Indigenization: On Taiwan’s Pinyin Issue from the Perspectives of the New Economy). Paper presented at東吳大學外語學院2004年校際學術研討會：全球化與在地化-語言、文學、文化 (2004 Soochow University College of Foreign Languages and Cultures Academic Conference: Globalization and Indigenization—Languages, Literatures, and Cultures), 27 March, 2004.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E29</td>
+    <td class="pub-pub">Her, One-Soon, 2004. Driving towards simplicity: in (partial) defense of the armchair linguist. Paper be presented at the 2nd Conference on Research Methodologies in Linguistics, 8 May, 2004, National Chengchi University, Taipei</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E28</td>
+    <td class="pub-pub">Her, One-Soon, 2004.Lexical mapping in Chinese inversion constructions. Keynote speech. International Workshop on Lexical-Functional Grammar Analysis of Chinese, 1 June, 2002, Department of Linguistics, Hong Kong University</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E27</td>
+    <td class="pub-pub">Her, One-Soon, 2002., Machine translation systems and language-related teaching. 2nd Conference on Language and Technology, 6-7 December, 2002, National Chengchi University, Taipei</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E26</td>
+    <td class="pub-pub">Her, One-Soon, 2002. Lexical mapping in Chinese inversion constructions. Keynote speech. International Workshop on Lexical-Functional Grammar Analysis of Chinese, 1 June, 2002, Department of Linguistics, Hong Kong University</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E25</td>
+    <td class="pub-pub">Her, One-Soon, 2000. Lexical mapping in Chinese inversion constructions. The 2000 NCCU Teachers’ Conference on Linguistic Research, 25-6 November, 2000, Taipei, National Chengchi University</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E24</td>
+    <td class="pub-pub">Her, One-Soon, 1999. Grammatical representation of idiom chunks. International Association of Chinese Linguistics 8th Annual Conference, 5-7 July 1999, University of Melbourne, Melbourne, Australia.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E23</td>
+    <td class="pub-pub">Her, One-Soon, 1998. Lexical mapping in Chinese inversion constructions. LFG98: International Lexical Functional Grammar Conference. University of Queensland, Brisbane, Australia.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E22</td>
+    <td class="pub-pub">Her, One-Soon, 1998. Grammatical constraints on Topic in Chinese. The Second National Conference of Academic papers. Fu Ying College of Technology, Kaohsiung.</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E21</td>
+    <td class="pub-pub">Her, One-Soon, 1997. The lexical mapping theory and Mandarin resultative compounds. LFG97, University of California at San Diego</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E20</td>
+    <td class="pub-pub">Her, One-Soon, 1996. Interaction of thematic structure and syntactic structures: on Mandarin dative alternations. The Fifth International Symposium on Chinese Languages and Linguistics, National Chengchi University, Taipei</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E19</td>
+    <td class="pub-pub">Her, One-Soon and Hui-Ting Huang, 1995. Chinese and English dative shift: A lexical mapping account. Proceedings of the 10th Pacific Asia Conference on Language, Information and Computation (PACLIC 10), City University of Hong Kong, pp.57-66
+</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E18</td>
+    <td class="pub-pub">Her, One-Soon and Hui-Ting Huang, 1995. Dative shift, lexical mapping, and UG. The Third Natural Language Processing Pacific?rim Symposium, Seoul, Korea, December 4?6, 1995</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E17</td>
+    <td class="pub-pub">Her, One-Soon, 1995. A lexicalist solution of Chinese compounds and idioms for NLP applications. 1995 International Conference on Computer Processing of Oriental Languages, Honolulu, Hawaii, November 23-25, 1995</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E16</td>
+    <td class="pub-pub">Her, One-Soon and Huang Hui-Ting, 1995. Mandarin locative inversion, morpholexical operations, and UG. The 4th International Conference on Chinese Linguistics (ICCL-4) and the 7th North American Conference on Chinese Linguistics (NACCL-7), University of Wisconsin, June 27-31, 1995</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E15</td>
+    <td class="pub-pub">Hui-Ting Huang and Her, One-Soon, 1995. Mandarin locative inversion and relation changing rules. The 2nd International Symposium on Languages in Taiwan (ISOLIT), National Taiwan University, June 3-4, 1995</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E14</td>
+    <td class="pub-pub">Her, One-Soon, 1995. Modularity and explanation: the case of VO constructions in Chinese. The 2nd Conference of Pacific Association for Computational Linguistics (PACLING II), The University of Queensland, Brisbane, Queensland, Australia, April 19?22, 1995</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E13</td>
+    <td class="pub-pub">Her, One-Soon, 1994. Applying the miscue analysis in ESL/EFL. The 11th Conference on TESOL-ROC, Fu Jen Catholic University, May 21, 1994</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E12</td>
+    <td class="pub-pub">Her, One-Soon, 1992. On the interaction between structure and lexicon. Annual Meeting of Chinese Language Teachers Association, Chicago, November 20-22, 1992</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E11</td>
+    <td class="pub-pub">Her, One-Soon, 1992. Generation of Chinese function words in an LFG-based machine translation system. The Deseret Language and Linguistic Society 1992 Symposium, Brigham Young University, Provo, Utah</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E10</td>
+    <td class="pub-pub">Her, One-Soon, 1992. Interaction and variation. The First International Conference of Chinese Linguistics, National University of Singapore, Singapore, June 24-6, 1992</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E09</td>
+    <td class="pub-pub">Her, One-Soon, 1991. Interaction of syntactic changes. The 2nd International Symposium on Chinese Languages and Linguistics, Academia Sinica, Taipei</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E08</td>
+    <td class="pub-pub">Her, One-Soon, 1991. Identifying the Chinese word in machine translation. The 32nd Annual Conference of American Translators Association, Salt Lake City, Utah</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E07</td>
+    <td class="pub-pub">Her, One-Soon, Dan Higinbotham, and Joseph Pentheroudakis, 1991. The treatment of idioms in the LFG-based ECS machine translation system, ACH/ALLC '91 Conference, Arizona State University, Tempe, Arizona</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E06</td>
+    <td class="pub-pub">Her, One-Soon, 1991. Rule interaction as a cause of grammatical variation. The Deseret Language and Linguistic Society 1991 Symposium, Brigham Young University, Provo, Utah</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E05</td>
+    <td class="pub-pub">Her, One-Soon, 1991. Variation of transitivity in Mandarin Chinese VO compound verbs. The Third North American Conference on Chinese Linguistics, Cornell University, Ithaca, New York, May 3-5, 1991</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E04</td>
+    <td class="pub-pub">Her, One-Soon, 1990. On the verb YOU in Mandarin Chinese. The 23rd International Conference on Sino-Tibetan Languages and Linguistics, University of Texas at Arlington, Arlington, Texas, October 5-7, 1990</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E03</td>
+    <td class="pub-pub">Her, One-Soon, Dan Higinbotham, and Joseph Pentheroudakis, 1989. An LFG-based English-Chinese machine translation system. The 1989 International Symposium on Chinese Text Processing, Florida Atlantic University, Boca Raton, Florida</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E02</td>
+    <td class="pub-pub">Her, One-Soon, 1989. Chinese verb subcategorization in a variant Lexical-Functional Grammar. The 22nd International Conference on Sino-Tibetan Languages and Linguistics, University of Hawaii, Honolulu, Hawaii, October 5-8, 1989</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+<tr>
+    <td class="pub-title">E01</td>
+    <td class="pub-pub">Her, One-Soon, 1989. The historical development of BA/JIANG sentences: more evidence from Bianwen and Chuanqi. The First Northeast Conference on Chinese Linguistics, Ohio State University, Columbus, Ohio, May 5-7, 1989</td>
+    <td class="pub-catagory">Conference Papers</td>
+    <td class="pub-other"></td>
+    <td class="pub-download"></td>
+</tr>
+
+                </table>
+            </section>
+
+            <!-- Copyright Section -->
+<section class="copyright py-4 text-center text-white">
+    <div class="container">
+        <small>Copyright &copy; 何萬順 2020</small>
+    </div>
+</section>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-to-top  position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <!-- up pic -->
+        <img class="upPic" src="img/arrow-up.png" width="50" height="50" alt="Up">
+    </a>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/main.js"></script>
+            <script>
+
+                function A() {
+
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[2];
+
+                        if (td) {
+                            txtValue = (td.textContent || '');
+                            console.log(txtValue)
+                            if (txtValue == "Refereed Journal Articles") {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                    }
+
+                }
+                function B() {
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[2];
+
+                        if (td) {
+                            txtValue = (td.textContent || '');
+                            console.log(txtValue)
+                            if (txtValue == "Bibliographies") {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                    }
+                }
+                function C() {
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[2];
+
+                        if (td) {
+                            txtValue = (td.textContent || '');
+                            console.log(txtValue)
+                            if (txtValue == "Book Chapters") {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                    }
+                }
+                function D() {
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[2];
+
+                        if (td) {
+                            txtValue = (td.textContent || '');
+                            console.log(txtValue)
+                            if (txtValue == "Books and Monographs") {
+                                tr[i].style.display = "";
+
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                    }
+                }
+                function E() {
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[2];
+
+                        if (td) {
+                            txtValue = (td.textContent || '');
+                            console.log(txtValue)
+                            if (txtValue == "Conference Papers") {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                    }
+                }
+
+                function tableSort() {
+                    var input,
+                        filter,
+                        table,
+                        tr,
+                        td,
+                        i,
+                        txtValue;
+
+                    input = document.getElementById("search");
+
+                    filter = input
+                        .value
+                        .toUpperCase();
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[1];
+                        td1 = tr[i].getElementsByTagName("td")[3];
+
+                        if (td) {
+                            txtValue = (td.textContent || '') + (td1.textContent || "");
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+
+                    }
+
+                }
+                function isMobile() {
+
+                    try {
+                        document.createEvent("TouchEvent");
+                        return true;
+                    } catch (e) {
+                        return false;
+                    }
+
+                }
+
+                //disappear in small device
+                var catagory_items = document.getElementsByClassName("pub-catagory")
+                var other_items = document.getElementsByClassName("pub-other")
+                var title = document.getElementsByClassName("pub-title")
+
+                for (i = 0; i < catagory_items.length; i++) {
+                    if (isMobile() == true) {
+                        catagory_items[i].style.display = "none";
+                    } else {
+                        catagory_items[i].style.display = "";
+                    }
+                }
+                for (i = 0; i < other_items.length; i++) {
+                    if (isMobile() == true) {
+                        other_items[i].style.display = "none";
+                    } else {
+                        other_items[i].style.display = "";
+                    }
+                }
+                for (i = 0; i < title.length; i++) {
+                    if (isMobile() == true) {
+                        other_items[i].style.display = "none";
+                    } else {
+                        other_items[i].style.display = "";
+                    }
+                }
+            </script>
+
+        </body>
+
+    </html>
